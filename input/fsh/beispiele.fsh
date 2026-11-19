@@ -18,17 +18,17 @@
 // sie eine Reaktion.
 // =====================================================================
 
-// Instance: TODO_Name                        // z. B. PenicillinAllergieAnna
-// InstanceOf: DgMedicationAllergy
-// Usage: #example
-// Title: "TODO Titel"
-// Description: "TODO: Was zeigt dieses Beispiel?"
-// * patient = Reference(AnnaMuster)
-// * category = TODO
-// * clinicalStatus = $allergy-clinical#TODO
-// * verificationStatus = $allergy-verification#TODO
-// * code = $sct#TODO "TODO Display"
-// * criticality = TODO
-// * onsetDateTime = "TODO"
-// * recorder = Reference(TODO)
-// * reaction.manifestation = $sct#TODO "TODO Display"
+Instance: PenicillinAllergieAnna
+InstanceOf: DgMedicationAllergy
+Usage: #example
+Title: "Bestätigte Penicillin-Allergie von Anna Muster"
+Description: "Bestätigte, hochkritische Penicillin-Allergie mit Beginn als Datum und einer dokumentierten Reaktion (Urtikaria)."
+* patient = Reference(AnnaMuster)
+* category = #medication
+* clinicalStatus = $allergy-clinical#active
+* verificationStatus = $allergy-verification#confirmed
+* code = $sct#91936005 "Allergy to penicillin (finding)"
+* criticality = #high
+* onsetDateTime = "2015-06-20"
+* recorder = Reference(DrSaraKeller)
+* reaction.manifestation = $sct#126485001 "Urticaria (disorder)"

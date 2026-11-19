@@ -6,29 +6,23 @@
 
 ### Use Case
 
-TODO: Beschreibt in zwei bis drei Sätzen, welche Situation euer IG abbildet.
-Wer erfasst die Daten, wer liest sie, und wofür werden sie gebraucht?
+Eine Hausarztpraxis erfasst Arzneimittelallergien ihrer Patientinnen und Patienten strukturiert und mit Codes aus der Schweizer Allergieliste. Eine Notfallstation soll diese Angaben zuverlässig auswerten können, insbesondere wie gefährlich eine Allergie ist und welche Reaktionen bekannt sind.
 
 ### Scope
 
-TODO: Was deckt dieses IG ab, und was bewusst nicht?
+Dieses IG deckt Allergien gegen Arzneimittel ab, die von einer Ärztin oder einem Arzt erfasst werden. Nicht abgedeckt sind Nahrungsmittel-, Umwelt- und biologische Allergien sowie Unverträglichkeiten, die von Patientinnen oder Angehörigen selbst gemeldet werden.
 
 ### Artefakte
 
-TODO: Ergänzt pro Artefakt einen Satz, wofür es da ist.
-
-* [DG Arzneimittelallergie](StructureDefinition-dg-medication-allergy.html): TODO
-* [Titel eures Beispiels](AllergyIntolerance-TODO_Name.html): TODO
-
-<!-- TODO_Name ist der Name hinter "Instance:" in beispiele.fsh,
-     z. B. AllergyIntolerance-PenicillinAllergieAnna.html -->
+* [DG Arzneimittelallergie](StructureDefinition-dg-medication-allergy.html): Profil auf Basis von CH Core AllergyIntolerance mit den Regeln für die Erfassung von Arzneimittelallergien.
+* [Bestätigte Penicillin-Allergie von Anna Muster](AllergyIntolerance-PenicillinAllergieAnna.html): Beispiel einer bestätigten, hochkritischen Penicillin-Allergie mit dokumentierter Reaktion.
 
 ### Abhängigkeiten
 
 Dieses IG baut auf [CH Core 6.0.0](https://fhir.ch/ig/ch-core/6.0.0/) auf.
 
-### Autorin oder Autor
+### Autorin
 
-TODO: Euer Name.
+Sandra Pannarakunnel
 
 <p style="font-size:smaller">Erstellt im Lab des Moduls Data Standards in Healthcare, ZHAW, HS26. Kein offizieller Standard.</p>
